@@ -65,7 +65,7 @@ export default function CreatePost() {
 
     return <div className="w-1/2 mx-auto">
         {isLoading ? <LoadingSpinner /> :
-            <form onSubmit={SubmitPostForm} className="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 font-sans flex flex-col">
+            <form onSubmit={SubmitPostForm} className="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 font-sans flex flex-col dark:bg-gray-800">
                 <div className="flex items-center gap-3 mb-3">
                     <img src={userData.photo} alt={userData.name} className="w-10 h-10 rounded-full object-cover shrink-0 bg-slate-100 border border-slate-50" />
                     <span className="text-[15px] font-bold text-slate-900 leading-tight">{userData.name}</span>

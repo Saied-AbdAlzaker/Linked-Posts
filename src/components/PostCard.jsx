@@ -45,11 +45,11 @@ export default function PostCard({ post, commentLimit }) {
             headers: { token }
         }).then(({ data }) => {
             setCommentPost(data.data);
-            addToast({
-                title: "Success",
-                description: data.message,
-                color: "success",
-            })
+            // addToast({
+            //     title: "Success",
+            //     description: data.message,
+            //     color: "success",
+            // })
         }).catch((error) => {
             addToast({
                 title: "Error",
